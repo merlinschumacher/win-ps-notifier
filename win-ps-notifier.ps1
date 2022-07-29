@@ -42,11 +42,12 @@ Specifies the icon to be shown in the notification. It can be either 'info', 'wa
 
 .PARAMETER ShowCancel
 
-Specifies whether the notification should have a cancel button. The default is 'false'. Notice: This only works with the 'popup' notification type.
+Specifies whether the notification should have a cancel button. The default is 'false'. 
+Notice: This only works with the 'popup' notification type.
 
 .PARAMETER OpenUrlOnClose
 
-Specifies whether the notification should open a specified URL when it is closed. The default is 'false'.
+Specifies whether the script should open a specified URL when the notification is acknowledged. The default is 'false'.
 
 .PARAMETER TargetUrl 
 
@@ -94,11 +95,11 @@ param (
     $IconType = "info",
     
     [Parameter()]
-    [bool]
+    [Switch]
     $ShowCancel = $false,
     
     [Parameter()]
-    [bool]
+    [Switch]
     $OpenUrlOnClose = $false,
     
     [Parameter()]
