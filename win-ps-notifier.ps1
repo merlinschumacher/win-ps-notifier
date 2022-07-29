@@ -106,7 +106,8 @@ param (
     $TargetUrl = "https://github.com/merlinschumacher/win-ps-notifier"
 )
 
-
+# Load needed assemblies
+[void] [System.Reflection.Assembly]::LoadWithPartialName("System.Windows.Forms")
 
 function Show-Popup {
    
