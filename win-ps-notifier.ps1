@@ -67,7 +67,7 @@ PS> win-ps-notifier.ps1 -NotificationType balloon -IconType info -Title "Title" 
 
 .EXAMPLE
 
-PS> win-ps-notifier.ps1 -IconType info -Title "Title" -Message "Message" -OpenUrlOnClose true -TargetUrl "http://merlinschumacher.de"
+PS> win-ps-notifier.ps1 -IconType warning -Title "Title" -Message "Message" -OpenUrlOnClose true -TargetUrl "http://merlinschumacher.de"
 
 .LINK
 
